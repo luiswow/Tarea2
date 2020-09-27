@@ -1,5 +1,16 @@
+$yellow: #e2f23e;
+$greens: green
+;
+@mixin margenes($top, $bottom){
+    margin-top: $top;
+    margin-bottom: $bottom;
+}
+@mixin margen($bottom){
+    padding-top: $bottom;
+}
+
 .espacios{
-    padding-top: 55px;
+    @include margen(56px)
 }
 .espacio{
     padding-top: 100px;
@@ -13,9 +24,10 @@ html {
   body {
     margin: 0;
     margin-bottom: 200px;
+    color: $greens;
   }
   footer {
-    background-color: black;
+    background-color: yellow;
     position: absolute;
     bottom: 0;
     width: 100%;

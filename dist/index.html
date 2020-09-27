@@ -284,7 +284,7 @@
           <h1 class="text-center pt-2">Boton que contiene el modal</h1>
                  <!-- Button trigger modal -->
                  <div class="col-6 col-md-4  pt-2 offset-3 offset-md-5 ">
-                  <button id="boton" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
                 Contacto Modal
                   </button>
                   
@@ -450,21 +450,8 @@
     <script src="node_modules/popper.js/dist/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
      <script>
-       $('#exampleModalLong').on('shown.bs.modal', function () {
-        $("#boton").addClass("btn btn-danger");
-        $("#boton").prop('disabled', true);
 
-         console.log("se muestra el modal")
-  
-})
-
-$('#exampleModalLong').on('hidden.bs.modal', function (e) {
-  console.log("se Cierra el modal")
-  $("#boton").addClass("btn btn-primary");
-  $("#boton").prop('disabled', false);
-})
-
-
+  $('#boton').tooltip(options)
 
 </script>
 <!--endbuild -->

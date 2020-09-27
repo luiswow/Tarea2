@@ -1,0 +1,41 @@
+$yellow: rgb(124, 27, 27);
+@mixin margenes($top, $bottom){
+    margin-top: $top;
+    margin-bottom: $bottom;
+}
+@mixin margen($bottom){
+    padding-top: $bottom;
+}
+
+.espacios{
+    @include margen(56px)
+}
+.espacio{
+    padding-top: 100px;
+}
+
+
+html {
+    min-height: 100%;
+    position: relative;
+  }
+  body {
+    margin: 0;
+    margin-bottom: 200px;
+  }
+  footer {
+    background-color: yellow;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100;
+    color: white;
+  }
+
+
+  .card-hotel{
+      flex: 1 200px;
+      padding: 20px 5px 2px 5px;
+      margin-top: 10px;
+      margin-left: 5px;
+  }

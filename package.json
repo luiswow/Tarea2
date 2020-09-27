@@ -5,17 +5,25 @@
   "main": "index.html",
   "scripts": {
     "dev": "lite-server",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch scss -o css",
+    "clean": "rimraf dist",
+    "imagemin": "imagemin images/* --out-dir dist/images"
   },
   "author": "Luis Reyes",
   "license": "ISC",
   "devDependencies": {
-    "lite-server": "^2.5.4"
+    "gulp": "^4.0.2",
+    "lite-server": "^2.5.4",
+    "onchange": "^7.0.2",
+    "rimraf": "^3.0.2"
   },
   "dependencies": {
     "bootstrap": "^4.5.2",
+    "concurrently": "^5.3.0",
     "font-awesome": "^4.7.0",
     "jquery": "^3.5.1",
+    "node-sass": "^4.14.1",
     "open-iconic": "^1.1.1",
     "popper.js": "^1.16.1"
   }
